@@ -7,23 +7,23 @@ const BlogItem = props => {
   const {item} = props
   const {title, imageUrl, avatarUrl, author, topic, id} = item
   return (
-    <Link to={`/blogs/${id}`}/>
-  <li>
-      <div className="blogitem-division">
-        <div>
-          <img src={imageUrl} alt="title" />
-        </div>
-        <div className="blogitem-title">
-          <h1>{topic}</h1>
-          <h1>{title}</h1>
-          <div className="blogitem-avatar">
-            <img className="avatar-image" src={avatarUrl} alt="title" />
-            <p>{author}</p>
+    <li>
+      <Link to={`/blogs/${id}`}>
+        <div className="blogitem-division">
+          <div>
+            <img src={imageUrl} alt={title} className="image-div" />
+          </div>
+          <div className="blogitem-title">
+            <h1>{topic}</h1>
+            <h1>{title}</h1>
+            <div className="blogitem-avatar">
+              <img className="avatar-image" src={avatarUrl} alt={title} />
+              <p>{author}</p>
+            </div>
           </div>
         </div>
-      </div>
-   </li>
-    </Link>
+      </Link>
+    </li>
   )
 }
 

@@ -6,13 +6,13 @@
 .avatar-author-division {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .avatarimg {
   height: 30px;
   width: 30px;
 }
 .image-blogitem {
-  height: 500px;
-  width: 500px;
+  height: 200px;
+  width: 200px;
 }

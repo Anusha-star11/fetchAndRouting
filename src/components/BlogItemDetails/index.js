@@ -9,7 +9,7 @@ import './index.css'
 
 class BlogItemDetails extends Component {
   state = {
-    blogItemdetails: {},
+    blogItemDetails: {},
     isLoading: true,
   }
 
@@ -39,15 +39,15 @@ class BlogItemDetails extends Component {
 
   renderBlogItemDetails = () => {
     const {blogItemDetails} = this.state
-    const {title, imageUrl, avatarUrl, author, content, topic} = blogItemDetails
+    const {title, imageUrl, avatarUrl, author, content} = blogItemDetails
     return (
       <div className="blogItemDetails-division">
         <h1>{title}</h1>
         <div className="avatar-author-division">
-          <img src={avatarUrl} alt={topic} className="avatarimg" />
+          <img src={avatarUrl} alt={title} className="avatarimg" />
           <p>{author}</p>
         </div>
-        <img src={imageUrl} alt={topic} className="image-blogitem" />
+        <img src={imageUrl} alt={title} className="image-blogitem" />
         <p>{content}</p>
       </div>
     )
