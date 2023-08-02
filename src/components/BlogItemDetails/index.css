@@ -1,0 +1,18 @@
+/* Write your CSS code here */
+.blogItemDetails-division {
+  display: flex;
+  flex-direction: column;
+}
+.avatar-author-division {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.avatarimg {
+  height: 30px;
+  width: 30px;
+}
+.image-blogitem {
+  height: 500px;
+  width: 500px;
+}
